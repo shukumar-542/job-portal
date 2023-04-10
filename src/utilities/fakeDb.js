@@ -25,7 +25,7 @@ const removeItems = (id) =>{
    }
 }
 
-const getStoredCart = ()=>{
+const getStoredJob = ()=>{
     const getJob = localStorage.getItem('apply-job');
     const getJobs = JSON.parse(getJob);
     return getJobs
@@ -33,4 +33,4 @@ const getStoredCart = ()=>{
 
 const removeAllCartItem =()=> localStorage.removeItem('shopping-cart')
 
-export  {addToDb,getStoredCart,removeItems,removeAllCartItem}
+export  {addToDb,getStoredJob,removeItems,removeAllCartItem}
