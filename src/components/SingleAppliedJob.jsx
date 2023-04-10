@@ -3,8 +3,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const SingleAppliedJob = ({ singleJob }) => {
-    console.log(singleJob);
+    // console.log(singleJob);
     const { id, imageLink, jobTitle, companyName, fulltimeOrPartTime, remoteOrOnsite, salary, location } = singleJob
+    
+    
     return (
         <div className=' p-5 flex justify-between items-center border border-gray-200 rounded-md my-5 shadow-md '>
             <div className='flex gap-5 '>

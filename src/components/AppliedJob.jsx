@@ -4,29 +4,43 @@ import { getStoredJob } from '../utilities/fakeDb';
 import SingleAppliedJob from './SingleAppliedJob';
 
 const AppliedJob = () => {
-    const [appliedJob, setAppliedJob]  = useState([])
+    const [appliedJob, setAppliedJob] = useState([])
     const featureJobData = useLoaderData()
-    
 
-    useEffect(()=>{
+
+    useEffect(() => {
         const savedJob = getStoredJob();
         const newArr = []
-        for(const id in savedJob){
+        for (const id in savedJob) {
             const findJob = featureJobData.find(job => job.id == id)
-            if(findJob){
+            if (findJob) {
                 newArr.push(findJob)
             }
         }
-        setAppliedJob(...appliedJob,newArr)
+        setAppliedJob(newArr)
         // console.log(savedJob);
-    },[])
-    // console.log(appliedJob);
+    }, [])
+    console.log(appliedJob);
+    const handleRemoteJob = ()=>{
+        const remoteJob = appliedJob.filter(job => job.remoteOrOnsite == "Remote");
+        setAppliedJob(remoteJob);
+    }
+
+    const handleOnSiteJob =()=>{
+        const onSiteJob = appliedJob.filter(job => job.remoteOrOnsite == "Onsite");
+        setAppliedJob(onSiteJob)
+    }
+
     return (
         <div className='my-container'>
+            <div className='text-end space-x-4'>
+                <button onClick={()=>handleRemoteJob()}  className='btn-primary'>Show Remote Jobs</button>
+                <button onClick={()=> handleOnSiteJob()} className='btn-primary'> Show On Site Jobs</button>
+            </div>
             {
-                appliedJob.map(singleJob => <SingleAppliedJob 
-                singleJob={singleJob}
-                key={singleJob.id}
+                appliedJob.map(singleJob => <SingleAppliedJob
+                    singleJob={singleJob}
+                    key={singleJob.id}
                 ></SingleAppliedJob>)
             }
         </div>
