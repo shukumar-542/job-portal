@@ -5,7 +5,7 @@ import { Bars4Icon, XMarkIcon } from '@heroicons/react/24/solid'
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     return (
-        <div className='px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
+        <div className=' py-5 mx-auto sm:max-w-xl md:max-w-full lg:px-8 bg-gray-100'>
             <div className='relative flex items-center justify-between'>
                 <div className='font-bold text-3xl'>Job Portal</div>
                 <ul className='items-center hidden space-x-8 lg:flex'>

@@ -5,6 +5,7 @@ import SingleAppliedJob from './SingleAppliedJob';
 
 const AppliedJob = () => {
     const [appliedJob, setAppliedJob] = useState([])
+    const [remoteJob , setRemoteJob] = useState([]);
     const featureJobData = useLoaderData()
 
 
@@ -20,15 +21,15 @@ const AppliedJob = () => {
         setAppliedJob(newArr)
         // console.log(savedJob);
     }, [])
-    console.log(appliedJob);
+    // console.log(remoteJob);
     const handleRemoteJob = ()=>{
         const remoteJob = appliedJob.filter(job => job.remoteOrOnsite == "Remote");
-        setAppliedJob(remoteJob);
+        setRemoteJob(remoteJob);
     }
 
     const handleOnSiteJob =()=>{
         const onSiteJob = appliedJob.filter(job => job.remoteOrOnsite == "Onsite");
-        setAppliedJob(onSiteJob)
+        setRemoteJob(onSiteJob)
     }
 
     return (
@@ -40,6 +41,12 @@ const AppliedJob = () => {
             {
                 appliedJob.map(singleJob => <SingleAppliedJob
                     singleJob={singleJob}
+                    key={singleJob.id}
+                ></SingleAppliedJob>)
+            }
+            {
+                remoteJob.map(singleJob=> <SingleAppliedJob
+                    singleJob ={singleJob}
                     key={singleJob.id}
                 ></SingleAppliedJob>)
             }
