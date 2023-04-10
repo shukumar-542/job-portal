@@ -21,7 +21,7 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setFeatureJob(data))
     }, [])
-    console.log(featureJob.length);
+    // console.log(featureJob.length);
     return (
         <div className='my-container  '>
             <div className='flex justify-between items-center mb-10'>

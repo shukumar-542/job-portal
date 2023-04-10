@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { CurrencyDollarIcon, BriefcaseIcon, PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/solid'
+import { addToDb } from '../utilities/fakeDb';
 
 
 const JobDetails = () => {
@@ -21,7 +22,7 @@ const JobDetails = () => {
     // console.log(singleJob.jobTitle);
     // console.log(jobs);
     const handleApplyNow = (id)=>{
-        console.log(id);
+        addToDb(id)
     }
     return (
         <div className='my-container  grid grid-cols-3 gap-10'>
