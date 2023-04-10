@@ -24,9 +24,9 @@ const Home = () => {
     // console.log(featureJob.length);
     return (
         <div className='my-container  '>
-            <div className='flex justify-between items-center mb-10'>
-                <div className='space-y-4'>
-                    <h1 className='font-extrabold text-5xl w-1/2'>One Step Closer To Your <span className='text-purple-600'>Dream Job</span></h1>
+            <div className='flex flex-col  lg:flex-row  lg:justify-between space-y-5 items-center mb-10'>
+                <div className='space-y-4 text-center lg:text-left'>
+                    <h1 className='font-extrabold text-5xl lg:w-1/2'>One Step Closer To Your <span className='text-purple-600'>Dream Job</span></h1>
                     <p className='text-gray-500'>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
                     <button className='btn-primary'>Get Started </button>
                 </div>
@@ -41,7 +41,7 @@ const Home = () => {
                 <h1 className='font-bold text-4xl'>Job Category List</h1>
                 <p className='text-gray-500'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
-            <div className='flex justify-between my-10 px-10'>
+            <div className='lg:flex justify-between  my-10 px-10'>
                 {
                     jobCategory.map(job => <JobCategory
                         job={job}
@@ -57,7 +57,7 @@ const Home = () => {
                 <p className='text-gray-500'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
 
-            <div className='grid grid-cols-2 gap-5 justify-between my-10'>
+            <div className='lg:grid grid-cols-2 gap-5 justify-between my-10'>
                 {
                     featureJob.slice(0, showAll ? 6 : 4).map(job => <FeatureJob
                         job={job}

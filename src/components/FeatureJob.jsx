@@ -6,7 +6,7 @@ const FeatureJob = ({ job }) => {
     // console.log(job);
     const { id, imageLink, jobTitle, companyName, remoteOrOnsite, fulltimeOrPartTime, location, salary } = job
     return (
-        <div className='border p-10 space-y-2 shadow-sm '>
+        <div className='border p-10 my-5 lg:my-0 space-y-2 shadow-sm '>
             <img src={imageLink} className='w-14 ' alt="" />
             <h2 className='font-bold font-2xl'>{jobTitle}</h2>
             <p className='text-gray-500'>{companyName}</p>
