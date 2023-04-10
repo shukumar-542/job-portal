@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "imageLink": "https://i.ibb.co/rQSsZ6X/tesla-9-1.png",
+      "imageLink": "https://i.ibb.co/MNSWNXy/netflix-4-1.png",
       "jobTitle": "Technical Database Engineer",
       "companyName": "ABC Company",
       "remoteOrOnsite": "Remote",
@@ -55,7 +55,7 @@
     },
     {
       "id": 4,
-      "imageLink": "https://i.ibb.co/MP31QjP/logo-6.png",
+      "imageLink": "https://i.ibb.co/vsS6YMC/google-1-1-1.png",
       "jobTitle": "Graphic Designer",
       "companyName": "Design Co.",
       "remoteOrOnsite": "Remote",
@@ -74,7 +74,7 @@
     },
     {
         "id": 5,
-        "imageLink": "https://i.ibb.co/GFmrrym/logo-7.png",
+        "imageLink": "https://i.ibb.co/vsS6YMC/google-1-1-1.png",
         "jobTitle": "Graphic Designer",
         "companyName": "Design Co.",
         "remoteOrOnsite": "Remote",

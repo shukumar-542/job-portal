@@ -6,18 +6,22 @@ import FeatureJob from './FeatureJob';
 const Home = () => {
 
     const [jobCategory, setJobCategory] = useState([]);
-    const [featureJob , setFeatureJob] = useState([])
+    const [featureJob, setFeatureJob] = useState([])
+
+    const [showAll, setShowAll] = useState(false);
+
     useEffect(() => {
         fetch('jobCategory.json')
             .then(res => res.json())
             .then(data => setJobCategory(data))
     }, [])
 
-    useEffect(()=>{
+    useEffect(() => {
         fetch('featureJob.json')
-        .then(res => res.json())
-        .then(data => setFeatureJob(data))
-    },[])
+            .then(res => res.json())
+            .then(data => setFeatureJob(data))
+    }, [])
+    console.log(featureJob.length);
     return (
         <div className='my-container  '>
             <div className='flex justify-between items-center mb-10'>
@@ -53,14 +57,18 @@ const Home = () => {
                 <p className='text-gray-500'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
 
-               <div className='grid grid-cols-2 gap-5 justify-between my-10'>
-               {
-                    featureJob.map(job => <FeatureJob
-                    job={job}
-                    key={job.id}
+            <div className='grid grid-cols-2 gap-5 justify-between my-10'>
+                {
+                    featureJob.slice(0, showAll ? 6 : 4).map(job => <FeatureJob
+                        job={job}
+                        key={job.id}
                     ></FeatureJob>)
                 }
-               </div>
+            </div>
+            <div className='flex justify-center items-center'>
+                {!showAll && <span onClick={() => setShowAll(true)}><button className='btn-primary '>See More</button></span>}
+
+            </div>
 
         </div>
     );

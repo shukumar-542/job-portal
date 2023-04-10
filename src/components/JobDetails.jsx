@@ -11,7 +11,7 @@ const JobDetails = () => {
     // console.log(featureJob);
    
     const singleJob = featureJob?.find(job => job.id == id) ;
-    console.log(singleJob);
+    // console.log(singleJob);
     const {jobDescription,jobResponsibility,educationalRequirements,experiences,jobTitle,salary } = singleJob
     
     // const {id} = useParams()
