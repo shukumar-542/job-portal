@@ -66,7 +66,7 @@ const Home = () => {
                 }
             </div>
             <div className='flex justify-center items-center pb-5'>
-                {!showAll && <span onClick={() => setShowAll(true)}><button className='btn-primary '>See More</button></span>}
+                {!showAll && <span onClick={() => setShowAll(true)}><button className='btn-primary '>See All Job</button></span>}
 
             </div>
 

@@ -32,7 +32,10 @@ const Blog = () => {
                 <div className='my-5 bg-slate-100 p-5 rounded text-xl'>
                     <p>
                         <span className='font-bold'>useRef : </span>
-                       useRef is a built hook in react that return mutable object. 
+                       useRef is a built hook in react that return mutable object. useRef 
+                       tracking the previous state or props of a component. It can also be 
+                       used to share mutable
+                        data between components or to cache a value that is expensive to compute.
                     </p>
                 </div>
 
