@@ -1,9 +1,12 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import vector from '../assets/Vector.png';
 import vector2 from '../assets/Vector-1.png'
 
 const JobDetailsHeader = () => {
+
+    const loc = useLocation();
+    const dynamicPathName = loc.pathname.split('/')[1];
     return (
         <div style={{ backgroundImage: `url(${vector}), url(${vector2})`,
         backgroundRepeat : 'no-repeat',
@@ -57,6 +60,9 @@ const JobDetailsHeader = () => {
                 <div className='hidden lg:block'>
                     <button className='btn-primary '>Star Applying</button>
                 </div>
+            </div>
+            <div className='flex  justify-center mt-20 text-2xl font-bold'>
+                {dynamicPathName}
             </div>
         </div>
     );

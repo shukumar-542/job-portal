@@ -7,7 +7,7 @@ import JobDetailsHeader from './components/JobDetailsHeader';
 
 function App() {
  const loc = useLocation();
- console.log(loc);
+//  console.log(loc);
   return (
     <div className="App">
       {

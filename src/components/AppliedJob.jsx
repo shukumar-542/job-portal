@@ -5,9 +5,8 @@ import SingleAppliedJob from './SingleAppliedJob';
 
 const AppliedJob = () => {
     const [appliedJob, setAppliedJob] = useState([])
-    const [remoteJob , setRemoteJob] = useState([]);
+    const [remoteJob, setRemoteJob] = useState([]);
     const featureJobData = useLoaderData()
-
 
     useEffect(() => {
         const savedJob = getStoredJob();
@@ -22,12 +21,12 @@ const AppliedJob = () => {
         // console.log(savedJob);
     }, [])
     // console.log(remoteJob);
-    const handleRemoteJob = ()=>{
+    const handleRemoteJob = () => {
         const remoteJob = appliedJob.filter(job => job.remoteOrOnsite == "Remote");
         setRemoteJob(remoteJob);
     }
 
-    const handleOnSiteJob =()=>{
+    const handleOnSiteJob = () => {
         const onSiteJob = appliedJob.filter(job => job.remoteOrOnsite == "Onsite");
         setRemoteJob(onSiteJob)
     }
@@ -35,8 +34,8 @@ const AppliedJob = () => {
     return (
         <div className='my-container'>
             <div className='text-end space-x-4'>
-                <button onClick={()=>handleRemoteJob()}  className='btn-primary'>Show Remote Jobs</button>
-                <button onClick={()=> handleOnSiteJob()} className='btn-primary'> Show On Site Jobs</button>
+                <button onClick={() => handleRemoteJob()} className='btn-primary'>Remote Jobs</button>
+                <button onClick={() => handleOnSiteJob()} className='btn-primary'> On Site Jobs</button>
             </div>
             {
                 appliedJob.map(singleJob => <SingleAppliedJob
@@ -45,11 +44,13 @@ const AppliedJob = () => {
                 ></SingleAppliedJob>)
             }
             {
-                remoteJob.map(singleJob=> <SingleAppliedJob
-                    singleJob ={singleJob}
+                remoteJob.map(singleJob => <SingleAppliedJob
+                    singleJob={singleJob}
                     key={singleJob.id}
                 ></SingleAppliedJob>)
             }
+
+
         </div>
     );
 };
