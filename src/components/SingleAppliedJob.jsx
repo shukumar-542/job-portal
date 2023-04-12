@@ -10,7 +10,7 @@ const SingleAppliedJob = ({ singleJob }) => {
     return (
         <div className=' p-5 flex justify-between items-center border border-gray-200 rounded-md my-5 shadow-md '>
             <div className='flex gap-5 '>
-                <div className='bg-gray-200 h-auto w-auto flex items-center'>
+                <div className='bg-gray-200 h-auto w-36  flex items-center'>
                     <img src={imageLink} className='p-4' alt="" />
                 </div>
                 <div className='space-y-4'>

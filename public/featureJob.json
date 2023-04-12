@@ -19,7 +19,7 @@
     },
     {
       "id": 2,
-      "imageLink": "https://i.ibb.co/vsS6YMC/google-1-1-1.png",
+      "imageLink": "https://i.ibb.co/C2xNncF/tesla-9-1.png",
       "jobTitle": "Marketing Coordinator",
       "companyName": "XYZ Corp",
       "remoteOrOnsite": "Onsite",
@@ -37,7 +37,7 @@
     },
     {
       "id": 3,
-      "imageLink": "https://i.ibb.co/c86x0hV/Group-10021.png",
+      "imageLink": "https://i.ibb.co/7NkdFxc/logo1.png",
       "jobTitle": "Data Analyst",
       "companyName": "123 Industries",
       "remoteOrOnsite": "Onsite",
@@ -61,11 +61,11 @@
       "remoteOrOnsite": "Remote",
       "location": "San Francisco, CA",
       "fulltimeOrPartTime": "Full-time",
-      "salary": "100k - 150k",
+      "salary": "80k - 150k",
       "jobDescription": " A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
       "jobResponsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
       "educationalRequirements": "Bachelor's degree in Graphic Design or related field",
-      "experiences": "3+ years of experience in graphic design",
+      "experiences": "5+ years of experience in graphic design",
       "contactInformation": {
         "phone": "444-555-6666",
         "email": "designjobs@designco.com"
@@ -80,7 +80,7 @@
         "remoteOrOnsite": "Remote",
         "location": "San Francisco, CA",
         "fulltimeOrPartTime": "Full-time",
-        "salary": "100k - 150k",
+        "salary": "120k - 150k",
         "jobDescription": " A UI/UX (User Interface/User Experience) designer is responsible for designing and creating engaging and effective interfaces for software and web applications. This includes designing the layout, visual design, and interactivity of the user interface.",
         "jobResponsibility": "Collaborating with cross-functional teams: UI/UX designers often work closely with other teams, including product management, engineering, and marketing, to ensure that the user interface is aligned with business and technical requirements. You will need to be able to effectively communicate your design ideas and gather feedback from other team members.",
         "educationalRequirements": "Bachelor's degree in Graphic Design or related field",
@@ -93,8 +93,8 @@
       },
       {
         "id": 6,
-        "imageLink": "https://i.ibb.co/MNSWNXy/netflix-4-1.png",
-        "jobTitle": "Graphic Designer",
+        "imageLink": "https://i.ibb.co/SNRbffh/logo4.png",
+        "jobTitle": "Web Designer",
         "companyName": "Design Co.",
         "remoteOrOnsite": "Remote",
         "location": "San Francisco, CA",

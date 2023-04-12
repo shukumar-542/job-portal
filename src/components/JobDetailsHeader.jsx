@@ -17,7 +17,7 @@ const JobDetailsHeader = () => {
             
             <div className='relative flex items-center justify-between'>
                 <div className='font-bold text-3xl'>Job Portal</div>
-                <ul className='items-center hidden space-x-8 lg:flex'>
+                <ul className='items-center space-x-8 lg:flex'>
                     <li>
                         <NavLink
                             to='/'
